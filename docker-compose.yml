@@ -1,0 +1,12 @@
+version: "3"
+services:
+  node-crud:
+    build:
+      context: .
+      dockerfile: DockerFIle
+    port:
+      - 3000:3000
+    volumes:
+      - ./app
+    environment:
+      - NODE_ENVIRONMENT=development
